@@ -3,7 +3,11 @@
 this is tiny framework for api automation test, has integrated with slack for notification, test management, netlify, and github action
 
 
-https://user-images.githubusercontent.com/79698509/232394599-c5adc684-fbe6-4e9c-a1e8-8ade21d43b0a.mp4
+
+
+
+https://github.com/Dfaw17/fithub-test/assets/79698509/7d9e5912-1a42-4a9e-82fa-50090554ddce
+
 
 
 ## Install Library
