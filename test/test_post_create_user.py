@@ -7,7 +7,7 @@ from json_schema.schema_response_reqres import *
 from jsonschema import validate as validate_json_schema
 
 
-@pytest.mark.TestManagement(3)
+@pytest.mark.TestManagement(14)
 def test_create_user_normal():
     name = "DAFFA FAWWAZ MAULANA"
     job = "SDET"
@@ -30,7 +30,7 @@ def test_create_user_normal():
     validate_json_schema(instance=req.json(), schema=post_create_user_normal)
 
 
-@pytest.mark.TestManagement(3)
+@pytest.mark.TestManagement(15)
 def test_create_user_empty_name():
     name = ""
     job = "SDET"
@@ -53,7 +53,7 @@ def test_create_user_empty_name():
     validate_json_schema(instance=req.json(), schema=post_create_user_normal)
 
 
-@pytest.mark.TestManagement(3)
+@pytest.mark.TestManagement(16)
 def test_create_user_without_payload_name():
     job = "SDET"
     payload = {
@@ -72,7 +72,7 @@ def test_create_user_without_payload_name():
     assert_that(verify_latency).is_less_than(general.max_latency)
 
 
-@pytest.mark.TestManagement(3)
+@pytest.mark.TestManagement(17)
 def test_create_empty_job():
     name = "DAFFA FAWWAZ MAULANA"
     job = ""
@@ -95,7 +95,7 @@ def test_create_empty_job():
     validate_json_schema(instance=req.json(), schema=post_create_user_normal)
 
 
-@pytest.mark.TestManagement(3)
+@pytest.mark.TestManagement(18)
 def test_create_without_payload_job():
     name = "DAFFA FAWWAZ MAULANA"
     payload = {

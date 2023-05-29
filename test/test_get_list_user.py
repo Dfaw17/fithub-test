@@ -7,7 +7,7 @@ from json_schema.schema_response_reqres import *
 from jsonschema import validate as validate_json_schema
 
 
-@pytest.mark.TestManagement(3)
+@pytest.mark.TestManagement(11)
 def test_get_list_user_normal():
     req = requests.get(url.api_list_user)
 
@@ -36,8 +36,8 @@ def test_get_list_user_normal():
     validate_json_schema(instance=req.json(), schema=get_list_user_normal)
 
 
-@pytest.mark.TestManagement(3)
-def test_get_list_user_normal_wrong_method():
+@pytest.mark.TestManagement(12)
+def test_get_list_user_wrong_method():
     req = requests.patch(url.api_list_user)
 
     # VERIFY
@@ -49,8 +49,8 @@ def test_get_list_user_normal_wrong_method():
     assert_that(verify_latency).is_less_than(general.max_latency)
 
 
-@pytest.mark.TestManagement(3)
-def test_get_list_user_normal_url():
+@pytest.mark.TestManagement(13)
+def test_get_list_user_wrong_url():
     req = requests.get(url.api_list_user+"-QU")
 
     # VERIFY

@@ -7,7 +7,7 @@ max_latency = 1000000
 # TEST CASE MANAGEMENT
 api_key = os.environ.get('API_KEY_QASE')
 host_test_management = "https://api.qase.io/v1/result"
-test_run = 9
+test_run = 10
 test_code_project = "TF"
 
 # SLACK NOTIFICATION

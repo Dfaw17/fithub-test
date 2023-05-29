@@ -7,7 +7,7 @@ from json_schema.schema_response_reqres import *
 from jsonschema import validate as validate_json_schema
 
 
-@pytest.mark.TestManagement(3)
+@pytest.mark.TestManagement(19)
 def test_delete_user_normal():
     req = requests.delete(url.api_list_user+"/1")
     # VERIFY
