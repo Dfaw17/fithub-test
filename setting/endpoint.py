@@ -1,7 +1,3 @@
-host_coingecko = "https://api.coingecko.com/api/v3"
-host_postku = "https://api.postku.website"
+host_reqresin = "https://reqres.in/"
 
-coingecko_ping_server = host_coingecko + "/ping"
-coingecko_coin_list = host_coingecko + "/coins/list"
-
-postku_login = host_postku + "/user/login/general"
+api_list_user = host_reqresin + "api/users"
