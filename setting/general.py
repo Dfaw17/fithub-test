@@ -1,10 +1,6 @@
 # POSTKU
 import os
 
-username_postku = "admin1"
-pwd_postku = "admin1"
-username_postku_not_found = "admin170901"
-
 # GENERAL
 max_latency = 1000000
 
